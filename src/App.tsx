@@ -39,5 +39,6 @@ function App() {
 </>
   );
 }
-
+/* qua andranno inseriti gli event on click usando il codice:
+<button className = 'btn btn-primary'> Nome del bottone </button>
 export default App;
