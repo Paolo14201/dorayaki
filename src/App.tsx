@@ -1,4 +1,10 @@
 import './App.scss';
+import { useState } from "react";
+import ReviewsIcon from '@mui/icons-material/Reviews';
+import HomeIcon from "@mui/icons-material/Home";
+import MarkAsUnreadIcon from "@mui/icons-material/MarkAsUnread";
+
+
 
 function App() {
   return (
@@ -13,13 +19,13 @@ function App() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active" aria-current="page" href="#"><HomeIcon>Filled</HomeIcon>Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Manga</a>
+          <a className="nav-link" href="#"><ReviewsIcon>Filled</ReviewsIcon>Recensioni</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Recensioni</a>
+          <a className="nav-link" href="#"><MarkAsUnreadIcon>Filled</MarkAsUnreadIcon>Contatti</a>
         </li>
       </ul>
     </div>
