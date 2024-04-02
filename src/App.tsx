@@ -1,4 +1,5 @@
 import './App.scss';
+import styled from 'styled-components';
 import HeaderComponent from "./components/HeaderComponent";
 import CarouselSlider from './components/CarouselSlider';
 
