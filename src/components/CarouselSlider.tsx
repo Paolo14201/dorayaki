@@ -6,12 +6,12 @@ const CarouselSlider = () => {
         {
             id: 1,
             image: './assets/images/jujutsu-kaisen-0.jpeg',
-            label: 'Jujutsu Kaisen'
+            label: 'Jujutsu Kaisen 0 - The Movie'
         },
           {
              id: 2,
-             image: './assets/images/solo leveling.jpeg',
-             label: 'Solo Leveling'
+             image: './assets/images/original.jpeg',
+             label: ''
          },
          {
              id: 3,
