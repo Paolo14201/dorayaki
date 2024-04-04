@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import RecipeApi from "../api/recipeApi";
+import RecipeCard from "../components/RecipeCard";
+import styled from "styled-components";
 import { Ricetta } from "../models/recipe.model";
 
 
@@ -28,7 +30,19 @@ const Recipes = () => {
     }
   }, [ricette])
 
-  return <div>Ricette</div>;
+  return (
+    <Contenitore>
+        <h2>Le nostre Ricette</h2>
+        <RecipeCard ricette={ricette}/>
+      </Contenitore>
+  );
 };
+const Contenitore = styled.div`
+  background-color: white;
+  h2{
+    margin-bottom: 20px;
+    margin-left: 1.6%;
+  }
+  `;
 
 export default Recipes;
