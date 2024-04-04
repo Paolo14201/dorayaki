@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import RecipeApi from "../api/recipeApi";
+import { Ricetta } from "../models/recipe.model";
 
 
 const Recipes = () => {
-  const [ricette, setRicette] = useState([]);
+  const [ricette, setRicette] = useState<Ricetta[]>([]);
   async function prendiRicette() {
     try {
-      const response = await RecipeApi.getRecipes();
+      const response: any = await RecipeApi.getRecipes();
       setRicette(response);
     } catch (error) {
       console.log(error);
