@@ -1,46 +1,50 @@
+const imageJujutsu = '../../public/assets/images/jujutsu-kaisen-0.jpeg';
+const imageSpy = '../../public/assets/images/SPY-x-FAMILY-2_Portada.jpeg';
+const impageSolo = '../../public/assets/images/solo leveling.jpeg';
+
 const RECIPES = [
     {
         _id: 1,
-        title: 'Cannelloni',
-        description: 'I cannelloni sono un piatto tradizionale della cucina italiana che conquista i palati con la sua combinazione di pasta, ripieno saporito e salsa al formaggio. Preparare i cannelloni in casa può sembrare una sfida, ma con questa guida passo-passo sarai in grado di creare un pasto delizioso che stupirà i tuoi ospiti. Segui le istruzioni qui di seguito e preparati a gustare i cannelloni fatti da te!',
-        image: 'https://www.cucchiaio.it/content/cucchiaio/it/ricette/2020/04/cannelloni-di-carne/_jcr_content/header-par/image-single.img.jpg/1587399398091.jpg',
-        difficulty: 2,
+        title: 'Jujutsu Kaisen 0 - The Movie',
+        description: "Da quando la sua amica d'infanzia Rika è morta in un incidente stradale, Yuuta Okkotsu è perseguitato dal suo fantasma. Purtroppo però, non si tratta più della dolce ragazza che conosceva un tempo, ma di uno spirito vendicativo e assetato di sangue; il ragazzo non riesce in alcun modo a tenere a freno la sua crudeltà, e per evitare di fare del male ad altre persone, decide di isolarsi dal mondo. Ma lo stregone Satoru Gojo ha altri piani in mente per lui: se Yuuta frequenterà l'istituto di arti occulte potrà imparare a controllare Rika e combattere al contempo gli esseri maligni.",
+        image: '../../public/assets/images/jujutsu-kaisen-0.jpeg',
+        difficulty: 7/10,
         date: '10/05/2022',
         published: true
       },
       {
         _id: 2,
-        title: 'Spaghetti',
-        description: "Un piatto simbolo della cucina italiana, con i tipici ingredienti del Bel Paese: spaghetti al pomodoro e basilico. Gli spaghetti al pomodoro sono un'istituzione, una ricetta semplice ma tutt'altro che banale. Soggetta ad infinite varianti per trovare l'equilibrio perfetto di sapori, la giusta cremosità e dolcezza, partendo già dalla scelta del tipo di pomodoro, da utilizzare per realizzare il sugo. Questo classico primo piatto è un vero banco di prova per chi ama prepararlo in casa, ma anche per gli chef stellati che serbano gelosamente i segreti delle loro versioni perfette e a volte creano delle irresistibili versioni gourmet, come i paccheri ai 3 pomodori per esempio! Eccoci ai fornelli insieme a voi per suggerirvi la nostra ricetta di questo classico intramontabile: una cottura lenta e dolce dei pomodori pelati e il profumo delle foglioline di basilico fresche sono tra i suggerimenti per un sicuro successo! Sicuramente ricorderete la famosa scena del film \"Miseria e Nobiltà\", quando Felice Sciosciammocca e gli altri componenti della famiglia si fiondano sul piatto da portata e iniziano ad afferrare gli spaghetti al pomodoro con le mani... ecco, siamo certi che con la nostra versione sarete tentati di fare altrettanto! Buon appetito!",
-        image: 'https://www.cucchiaio.it/content/cucchiaio/it/ricette/2019/12/spaghetti-al-pomodoro/_jcr_content/header-par/image-single.img.jpg/1576681061599.jpg',
-        difficulty: 2,
+        title: 'Spy x Family',
+        description:"Twilight, una delle migliori spie al mondo, ha trascorso la vita ad affrontare missioni sotto copertura per rendere il mondo un posto migliore. Un giorno però riceve un compito particolarmente difficile, per riuscire nella sua nuova missione dovrà formare una famiglia temporanea e iniziare una nuova vita!",
+        image: "../../public/assets/images/SPY-x-FAMILY-2_Portada.jpeg",
+        difficulty: 7.5/10,
         date: '12/05/2022',
         published: true
       },
       {
         _id: 3,
-        title: 'Ciambelle',
-        description:"Siamo orgogliosi di presentarvi le nostre ciambelle fritte, una versione 100% italiana dei classici donuts americani! Prepararle a casa è abbastanza semplice... potrete realizzare l'impasto a mano, senza planetaria, ma dovrete avere un po' di pazienza e attendere la giusta lievitazione per ottenere delle ciambelle sofficissime! Anche la frittura è un passaggio da non sottovalutare, infatti solo alla temperatura indicata le ciambelline risulteranno ben cotte all'interno e dorate alla perfezione. Le nostre ciambelle fritte si possono gustare al naturale, o ricoperte di zucchero, come le graffe di Carnevale, ma se volete renderle davvero speciali la glassa al caffè è quello che fa al caso vostro! E per completare questo dolce una cascata di granella di nocciole! Pronti a realizzarle?! ",
-        image: 'https://blog.giallozafferano.it/dulcisinforno/wp-content/uploads/2019/06/Ciambelle-fritte-7250.jpg',
-        difficulty: 3,
+        title: 'Solo Leveling',
+        description:"Il Gate, un misterioso portale che collega il mondo umano a quello di terribili mostri, mette a rischio la vita degli esseri umani. Delle persone con particolari poteri, gli hunter, combattono per contrastarli. Sung Jinwoo è molto debole, senza particolari abilità, ed è schedato come hunter di livello E. Nonostante questo, cerca di fare del suo meglio per portare avanti il suo compito e pagare le spese mediche della madre? Ma un giorno, a seguito di un inspiegabile evento, Jinwoo comincia a sviluppare i suoi poteri? Che possa diventare un imbattibile hunter di livello S",
+        image: '../../public/assets/images/solo leveling.jpeg',
+        difficulty: 8.5/10,
         date: '18/05/2022',
         published: true
       },
       {
         _id: 4,
-        title: 'Insalata',
-        description: "L’insalata croccante, per la presenza di crostini di pane e riccioli di parmigiano, si può definire un ricco contorno ma anche un leggero piatto unico: una fresca e appetitosa insalata che sarà molto gradita nelle calde giornate d’estate. L’insalata croccante non è solo un’ottima pietanza da preparare e consumare durante l’estate, ma è anche ideale da portare con se in ufficio al posto del solito panino: ricordatevi in questo caso, di condirla e unire i crostini di pane poco prima di consumarla.",
-        image: 'https://blog.giallozafferano.it/azuccherozero/wp-content/uploads/2018/12/Insalata-verde-con-sesamo-tostato-o-960x721.jpeg',
-        difficulty: 1,
+        title: 'Kimetsu No Yaiba / Deamon Slayer',
+        description: "Tanjiro è il primogenito di una famiglia che ha perso il padre. Un giorno, visita un'altra città per vendere carbone ma finisce col passare la notte lì, invece di tornare a casa, per via di una voce riguardante un demone che di notte vaga per una montagna lì vicino. Quando torna a casa il giorno seguente, ad attenderlo ci sarà una tragedia.",
+        image: "../../public/assets/images/portada-kimetsu-220.webp",
+        difficulty: 8/10,
         date: '20/06/2022',
         published: true
       },
       {
         _id: 5,
-        title: 'Pizza Margherita',
-        description: 'Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solme',
-        image: 'https://primochef.it/wp-content/uploads/2019/08/SH_pizza_fatta_in_casa-1200x800.jpg',
-        difficulty: 4,
+        title: 'Bleach',
+        description:"Ichigo Kurosaki è un giovane dotato dell'abilità di vedere gli spiriti. La sua vita subisce un drastico cambiamento quando una shinigami di nome Rukia Kuchiki, incrocia il suo cammino in cerca di un Hollow. Durante lo scontro con lo spirito Rukia rimane gravemente ferita ed è costretta a trasferire parte dei suoi poteri ad Ichigo, che accetta la proposta della shinigami nel tentativo di proteggere i suoi familiari. Tuttavia, durante il processo di trasferimento, qualcosa va storto ed Ichigo assorbe tutti i poteri di Rukia, diventando uno shinigami a pieno titolo. ",
+        image: '../../public/assets/images/Bleach.jpeg',
+        difficulty: 8/10,
         date: '20/07/2022',
         published: true
       },
