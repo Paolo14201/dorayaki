@@ -26,7 +26,7 @@ const HeaderComponent = () => {
               </li>
               <li className="nav-item">
                 <Link to="/anime" className="nav-link">
-                  <ReviewsIcon>Filled</ReviewsIcon>Ricette
+                  <ReviewsIcon>Filled</ReviewsIcon>Anime List
                   </Link>
               </li>
               <li className="nav-item">

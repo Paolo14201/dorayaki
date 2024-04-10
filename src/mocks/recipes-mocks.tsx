@@ -1,13 +1,11 @@
-const imageJujutsu = '../../public/assets/images/jujutsu-kaisen-0.jpeg';
-const imageSpy = '../../public/assets/images/SPY-x-FAMILY-2_Portada.jpeg';
-const impageSolo = '../../public/assets/images/solo leveling.jpeg';
+
 
 const RECIPES = [
     {
         _id: 1,
         title: 'Jujutsu Kaisen 0 - The Movie',
         description: "Da quando la sua amica d'infanzia Rika è morta in un incidente stradale, Yuuta Okkotsu è perseguitato dal suo fantasma. Purtroppo però, non si tratta più della dolce ragazza che conosceva un tempo, ma di uno spirito vendicativo e assetato di sangue; il ragazzo non riesce in alcun modo a tenere a freno la sua crudeltà, e per evitare di fare del male ad altre persone, decide di isolarsi dal mondo. Ma lo stregone Satoru Gojo ha altri piani in mente per lui: se Yuuta frequenterà l'istituto di arti occulte potrà imparare a controllare Rika e combattere al contempo gli esseri maligni.",
-        image: '../../public/assets/images/jujutsu-kaisen-0.jpeg',
+        image: './assets/images/jujutsu-kaisen-0.jpeg',
         difficulty: 7/10,
         date: '10/05/2022',
         published: true
@@ -16,7 +14,7 @@ const RECIPES = [
         _id: 2,
         title: 'Spy x Family',
         description:"Twilight, una delle migliori spie al mondo, ha trascorso la vita ad affrontare missioni sotto copertura per rendere il mondo un posto migliore. Un giorno però riceve un compito particolarmente difficile, per riuscire nella sua nuova missione dovrà formare una famiglia temporanea e iniziare una nuova vita!",
-        image: "../../public/assets/images/SPY-x-FAMILY-2_Portada.jpeg",
+        image: "./assets/images/SPY-x-FAMILY-2_Portada.jpeg",
         difficulty: 7.5/10,
         date: '12/05/2022',
         published: true
@@ -25,7 +23,7 @@ const RECIPES = [
         _id: 3,
         title: 'Solo Leveling',
         description:"Il Gate, un misterioso portale che collega il mondo umano a quello di terribili mostri, mette a rischio la vita degli esseri umani. Delle persone con particolari poteri, gli hunter, combattono per contrastarli. Sung Jinwoo è molto debole, senza particolari abilità, ed è schedato come hunter di livello E. Nonostante questo, cerca di fare del suo meglio per portare avanti il suo compito e pagare le spese mediche della madre? Ma un giorno, a seguito di un inspiegabile evento, Jinwoo comincia a sviluppare i suoi poteri? Che possa diventare un imbattibile hunter di livello S",
-        image: '../../public/assets/images/solo leveling.jpeg',
+        image: './assets/images/sololeveling.jpeg',
         difficulty: 8.5/10,
         date: '18/05/2022',
         published: true
@@ -34,7 +32,7 @@ const RECIPES = [
         _id: 4,
         title: 'Kimetsu No Yaiba / Deamon Slayer',
         description: "Tanjiro è il primogenito di una famiglia che ha perso il padre. Un giorno, visita un'altra città per vendere carbone ma finisce col passare la notte lì, invece di tornare a casa, per via di una voce riguardante un demone che di notte vaga per una montagna lì vicino. Quando torna a casa il giorno seguente, ad attenderlo ci sarà una tragedia.",
-        image: "../../public/assets/images/portada-kimetsu-220.webp",
+        image: "./assets/images/portada-kimetsu-220.webp",
         difficulty: 8/10,
         date: '20/06/2022',
         published: true
@@ -43,7 +41,7 @@ const RECIPES = [
         _id: 5,
         title: 'Bleach',
         description:"Ichigo Kurosaki è un giovane dotato dell'abilità di vedere gli spiriti. La sua vita subisce un drastico cambiamento quando una shinigami di nome Rukia Kuchiki, incrocia il suo cammino in cerca di un Hollow. Durante lo scontro con lo spirito Rukia rimane gravemente ferita ed è costretta a trasferire parte dei suoi poteri ad Ichigo, che accetta la proposta della shinigami nel tentativo di proteggere i suoi familiari. Tuttavia, durante il processo di trasferimento, qualcosa va storto ed Ichigo assorbe tutti i poteri di Rukia, diventando uno shinigami a pieno titolo. ",
-        image: '../../public/assets/images/Bleach.jpeg',
+        image: './assets/images/Bleach.jpeg',
         difficulty: 8/10,
         date: '20/07/2022',
         published: true
