@@ -14,8 +14,8 @@ const Recipes = () => {
     } catch (error) {
       console.log(error);
     }
-  }
-  //use effect all'avvio del componente
+  };
+
   useEffect(() => {
     prendiRicette();
     return () => {
@@ -32,11 +32,12 @@ const Recipes = () => {
 
   return (
     <Contenitore>
-        <h2>Le nostre Ricette</h2>
+        <h2>Anime List</h2>
         <RecipeCard ricette={ricette}/>
       </Contenitore>
   );
 };
+
 const Contenitore = styled.div`
   background-color: white;
   h2{

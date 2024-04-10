@@ -1,23 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import { Ricetta } from "../models/recipe.model";
+import { Link } from "react-router-dom";
 
-const RecipeCard = ( props:any ) => {
+const RecipeCard = (props: any) => {
 
- const ricetta: Ricetta[] = props.ricette;
+  const ricetta: Ricetta[] = props.ricette;
   return (
     <Contenitore>
-      {props.ricette.map((ricetta:any) => (
+      {props.ricette.map((ricetta : any) => (
         <div className="container-card">
           <div className="card">
-            <div className="card-image" style={{backgroundImage:`url(${ricetta.image})`}}>
+            <div className="card-image" style={{ backgroundImage: `url(${ricetta.image})` }}>
             </div>
             <div className="card-body">
               <h5 className="card-title">{ricetta.title}</h5>
               <p className="card-text"> {ricetta.description}</p>
+              <Link to={`/dettaglio / ${ricetta.title} / ${ricetta._id}`} >
               <button className="btn btn-primary"> Viasualizza</button>
-              </div>
+              </Link>
             </div>
+          </div>
         </div>
       ))}
     </Contenitore>

@@ -8,7 +8,7 @@ async function getRecipes() {
     console.log(error);
   }
 }
-const getRecipe = async (id) => {
+const getRecipe = async (id : any) => {
   try{
       const response = await RECIPES.find(iteam => iteam._id === id)
       return response;

@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 import RecipeApi from "../api/recipeApi";
 
 const DetailRecipe = () => {
-  const { id } = useParams();
-  const [ricetta, setRicetta] = useState();
+  const { id} = useParams();
+  const [ricetta, setRicetta] : any = useState();
 
   async function onGetRecipe() {
     try {
@@ -26,19 +26,19 @@ const DetailRecipe = () => {
       <>
         <Contenitore>
           <div
-            className="fotoRicetta"
+            className="fotoAnime"
             style={{ backgroundImage: `url(${ricetta.image})` }}></div>
 
-          <p className="titoloRicetta">
+          <p className="titoloAnime">
             <h2>{ricetta.title}</h2>
           </p>
 
-          <p className="Descrizione">{ricetta.description}</p>
+          <p className="Descrizione"> {ricetta.description} </p>
 
           <div className="container">
             <div className="row">
-              <div className="col-sm">Difficoltà: {ricetta.difficulty}</div>
-              <div className="col-sm-2">{ricetta.date}</div>
+              <div className="col-sm">Voto: {ricetta.difficulty} </div>
+              <div className="col-sm-2"> {ricetta.date} </div>
             </div>
           </div>
         </Contenitore>
@@ -50,7 +50,7 @@ const DetailRecipe = () => {
 const Contenitore = styled.div`
   background-color: white;
 
-  .fotoRicetta {
+  .fotoAnime {
     height: 450px;
     margin-top: -19px;
     background-size: cover;
@@ -59,7 +59,7 @@ const Contenitore = styled.div`
 
   }
 
-  .titoloRicetta {
+  .titoloAnime {
     margin-left: 20px;
     margin-top: 20px;
   }
