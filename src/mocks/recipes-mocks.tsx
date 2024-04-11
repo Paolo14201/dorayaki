@@ -5,7 +5,7 @@ const RECIPES = [
         _id: 1,
         title: 'Jujutsu Kaisen 0 - The Movie',
         description: "Da quando la sua amica d'infanzia Rika è morta in un incidente stradale, Yuuta Okkotsu è perseguitato dal suo fantasma. Purtroppo però, non si tratta più della dolce ragazza che conosceva un tempo, ma di uno spirito vendicativo e assetato di sangue; il ragazzo non riesce in alcun modo a tenere a freno la sua crudeltà, e per evitare di fare del male ad altre persone, decide di isolarsi dal mondo. Ma lo stregone Satoru Gojo ha altri piani in mente per lui: se Yuuta frequenterà l'istituto di arti occulte potrà imparare a controllare Rika e combattere al contempo gli esseri maligni.",
-        image: './assets/images/jujutsu-kaisen-0.jpeg',
+        image: '/assets/images/jujutsu-kaisen-0.jpeg',
         difficulty: 7/10,
         date: '10/05/2022',
         published: true
