@@ -6,6 +6,7 @@ import HeaderComponent from './components/HeaderComponent';
 import Home from './pages/Home';
 import Recipes from './pages/Recipes';
 import DetailRecipe from './pages/DetailRecipe';
+import RegistrationUser from './pages/RegistrationUser';
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/anime" element={<Recipes />} />
         <Route path="/dettaglio/:title/:id" element={<DetailRecipe />} />
+      <Route path= "/registrazione" element={<RegistrationUser />} />
       </Routes>
+
     </Router>
   );
 }

@@ -3,6 +3,7 @@ import ReviewsIcon from '@mui/icons-material/Reviews';
 import HomeIcon from "@mui/icons-material/Home";
 import MarkAsUnreadIcon from "@mui/icons-material/MarkAsUnread";
 import { Link } from 'react-router-dom';
+import PersonIcon from '@mui/icons-material/Person';
 
 const HeaderComponent = () => {
   const logo = './assets/images/logo.png';
@@ -28,6 +29,11 @@ const HeaderComponent = () => {
                 <Link to="/anime" className="nav-link">
                   <ReviewsIcon>Filled</ReviewsIcon>Anime List
                   </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/registrazione" className="nav-link">
+                  <PersonIcon>Filled</PersonIcon>Registrazione
+                </Link>
               </li>
               <li className="nav-item">
                 <Link to="/Contatti" className="nav-link">

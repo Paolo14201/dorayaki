@@ -31,26 +31,26 @@ const DetailRecipe = () => {
 
   return (
     <Contenitore>
-      ricetta && (
+      {ricetta && (
       <>
         <div
           className="fotoAnime"
-          style={{ backgroundImage: `url(${ricetta.image})` }}></div>
+          style={{ backgroundImage: `url(${ricetta?.image})` }}></div>
 
         <p className="titoloAnime">
-          <h2>{ricetta.title}</h2>
+          <h2>{ricetta?.title}</h2>
         </p>
 
-        <p className="Descrizione"> {ricetta.description} </p>
+        <p className="Descrizione"> {ricetta?.description} </p>
 
         <div className="container">
           <div className="row">
-            <div className="col-sm">Voto: {ricetta.difficulty} </div>
-            <div className="col-sm-2"> {ricetta.date} </div>
+            <div className="col-sm">Voto: {ricetta?.difficulty} </div>
+            <div className="col-sm-2"> {ricetta?.date} </div>
           </div>
         </div>
       </>
-      )
+      )}
       {!ricetta && (
         <div>Spiacenti l'Anime cercato non è piu disponibile</div>
       )}
